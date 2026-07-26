@@ -1,0 +1,172 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Jelajah Budaya Nusantara — playful educational design system */
+
+@theme inline {
+  --font-display: "Fredoka", "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --radius-2xl: calc(var(--radius) + 14px);
+  --radius-3xl: calc(var(--radius) + 24px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ocean: var(--ocean);
+  --color-ocean-foreground: var(--ocean-foreground);
+  --color-forest: var(--forest);
+  --color-forest-foreground: var(--forest-foreground);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-foreground: var(--terracotta-foreground);
+  --color-sky: var(--sky);
+  --color-cream: var(--cream);
+
+  --shadow-soft: 0 10px 30px -12px rgba(30, 41, 59, 0.18);
+  --shadow-pop: 0 18px 40px -14px rgba(216, 67, 21, 0.35);
+  --shadow-card: 0 8px 24px -10px rgba(74, 144, 226, 0.28);
+}
+
+:root {
+  --radius: 1rem;
+
+  /* Base */
+  --background: oklch(0.972 0.012 85);      /* #F8F6F2 warm cream */
+  --foreground: oklch(0.24 0.03 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.03 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.03 260);
+
+  /* Brand */
+  --primary: oklch(0.66 0.16 250);           /* Ocean Blue #4A90E2 */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.87 0.16 92);          /* soft golden */
+  --secondary-foreground: oklch(0.24 0.05 60);
+  --muted: oklch(0.94 0.01 85);
+  --muted-foreground: oklch(0.45 0.02 260);
+  --accent: oklch(0.66 0.18 40);             /* terracotta accent */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.6 0.22 27);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9 0.02 85);
+  --input: oklch(0.9 0.02 85);
+  --ring: oklch(0.66 0.16 250);
+
+  /* Named palette */
+  --ocean: oklch(0.66 0.16 250);             /* #4A90E2 */
+  --ocean-foreground: oklch(1 0 0);
+  --forest: oklch(0.62 0.17 148);            /* #43A047 */
+  --forest-foreground: oklch(1 0 0);
+  --gold: oklch(0.87 0.16 92);               /* #FFD54F */
+  --gold-foreground: oklch(0.28 0.05 60);
+  --terracotta: oklch(0.58 0.19 37);         /* #D84315 */
+  --terracotta-foreground: oklch(1 0 0);
+  --sky: oklch(0.9 0.06 235);
+  --cream: oklch(0.972 0.012 85);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html, body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Animations */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(-1.5deg); }
+}
+@keyframes float-slower {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.5deg); }
+}
+@keyframes drift {
+  0% { transform: translateX(-10%); }
+  100% { transform: translateX(110%); }
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.9) translateY(8px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@utility animate-float { animation: float-slow 6s ease-in-out infinite; }
+@utility animate-float-alt { animation: float-slower 7s ease-in-out infinite; }
+@utility animate-drift-slow { animation: drift 60s linear infinite; }
+@utility animate-drift-slower { animation: drift 90s linear infinite; }
+@utility animate-bob { animation: bob 3s ease-in-out infinite; }
+@utility animate-pop-in { animation: pop-in 0.5s ease-out both; }
+
+@utility btn-playful {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  color: white;
+  background: linear-gradient(180deg, var(--color-terracotta), oklch(0.5 0.18 32));
+  box-shadow: 0 8px 0 oklch(0.42 0.14 32), 0 18px 30px -12px rgba(216, 67, 21, 0.5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+@utility btn-playful-hover {
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 0 oklch(0.42 0.14 32), 0 22px 34px -12px rgba(216, 67, 21, 0.55);
+  }
+  &:active {
+    transform: translateY(3px);
+    box-shadow: 0 4px 0 oklch(0.42 0.14 32), 0 10px 20px -10px rgba(216, 67, 21, 0.5);
+  }
+}
+
+@utility card-soft {
+  background: var(--color-card);
+  border-radius: 1.75rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid oklch(0.94 0.01 85);
+}
