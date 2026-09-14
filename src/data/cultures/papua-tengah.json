@@ -1,0 +1,23 @@
+{
+    "id": "IN29",
+    "nama": "Papua Tengah",
+    "ibu_kota": "Nabire",
+    "luas_km2": 61072.91,
+    "jumlah_penduduk": 1492280,
+    "budaya": {
+        "baju_adat": "Koteka/Holim, Rok Rumbai/Rumibia dan Baju Kurung",
+        "tarian": "Tari Perang (Highland Papua), Tari Aniri",
+        "rumah_adat": "Rumah Honai, Rumah Ebe'ai dan Rumah Wamai",
+        "senjata_tradisional": "Tombak (Tul//Mensa), Busur dan Panah (Fela), Pisau Belati Tulang Kasuari",
+        "makanan_khas": "Papeda, Kue Sagu/Bagea, dan Sinole",
+        "warisan_budaya": "Noken",
+        "cagar_budaya": "Honai dan Noken",
+        "alat_musik": "Tifa dan Suling Tambur",
+        "flora": "Diplycosia Puradyatmikai",
+        "flora_latin": "Diplycosia puradyatmikai",
+        "flora_english": "Diplycosia puradyatmikai",
+        "fauna": "Burung Mambruk Selatan",
+        "fauna_latin": "Goura Scheepmakeri",
+        "fauna_english": "Southern Crowned Pigeon"
+    }
+}

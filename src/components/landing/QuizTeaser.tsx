@@ -1,42 +1,46 @@
 import { useState } from "react";
-import { Check, X, Sparkles } from "lucide-react";
-import boy from "@/assets/mascot-boy.png";
+import { Sparkles, Check, X } from "lucide-react";
+import mascotBird from "@/assets/mascot-bird.png";
+import xpIcon from "@/assets/xp-icon.png";
 
-const options = [
-  { id: "a", label: "Bali" },
-  { id: "b", label: "Papua" },
-  { id: "c", label: "Sumatera Barat", correct: true },
-  { id: "d", label: "NTB" },
-];
+type Option = {
+  id: string;
+  label: string;
+  correct?: boolean;
+};
 
 export function QuizTeaser() {
   const [picked, setPicked] = useState<string | null>(null);
+
+  const options: Option[] = [
+    { id: "a", label: "Sumatera Utara" },
+    { id: "b", label: "Sumatera Barat", correct: true },
+    { id: "c", label: "Riau" },
+    { id: "d", label: "Jambi" },
+  ];
+
   const answered = picked !== null;
-  const correct = picked === "c";
+  const correct = picked === "b";
 
   return (
-    <section id="kuis" className="relative py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="relative py-24 md:py-32 bg-white font-[family-name:var(--font-body)] overflow-hidden select-none">
+      <div className="mx-auto max-w-7xl px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-5">
-            <span className="inline-block bg-terracotta text-terracotta-foreground rounded-full px-4 py-1.5 text-sm font-bold mb-4">
-              Kuis
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Belajar sambil main.
+            <div className="badge-pill mb-4 inline-flex items-center gap-2">
+              <Sparkles className="size-4 text-amber-500" /> Kuis Interaktif
+            </div>
+            <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-black text-foreground mb-4">
+              Uji Pengetahuan Budayamu!
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-muted-foreground text-lg mb-8 leading-relaxed font-semibold">
               Jawab kuis di tiap provinsi, kumpulkan XP, dan naik ke level Master Nusantara. Salah? Maskot kami akan menyemangati kamu untuk coba lagi!
             </p>
-            <div className="flex items-center gap-3">
-              <div className="flex-1 h-4 rounded-full bg-cream overflow-hidden border border-border">
-                <div className="h-full w-[21%] bg-gradient-to-r from-forest to-ocean rounded-full" />
-              </div>
-              <span className="font-bold text-foreground">21%</span>
-            </div>
-            <div className="mt-6 flex items-center gap-4">
-              <img src={boy} alt="" className="w-24 h-auto animate-bob" width={768} height={1024} />
-              <div className="card-soft rounded-2xl px-4 py-3 max-w-xs">
+
+            {/* Mascot Tip */}
+            <div className="card-soft rounded-3xl p-5 flex items-center gap-4 border-2 border-border/80">
+              <img src={mascotBird} alt="Maskot Burung" className="size-16 object-contain" />
+              <div>
                 <div className="text-xs font-bold text-terracotta uppercase">Tips Maskot</div>
                 <div className="font-semibold text-foreground">"Ingat, rumahnya beratap seperti tanduk kerbau!"</div>
               </div>
@@ -47,8 +51,8 @@ export function QuizTeaser() {
             <div className="card-soft rounded-[2rem] p-6 md:p-8 relative">
               <div className="flex items-center justify-between mb-6">
                 <span className="rounded-full bg-gold text-gold-foreground px-3 py-1 text-sm font-bold">Soal 3 / 10</span>
-                <span className="flex items-center gap-1 rounded-full bg-cream px-3 py-1 text-sm font-bold text-foreground">
-                  <Sparkles className="size-4 text-terracotta" /> +20 XP
+                <span className="flex items-center gap-1.5 rounded-full bg-cream px-3 py-1 text-sm font-bold text-foreground">
+                  <img src={xpIcon} alt="XP" className="size-4.5 object-contain" /> +20 XP
                 </span>
               </div>
 

@@ -1,0 +1,23 @@
+{
+    "id": "IN25",
+    "nama": "Papua Barat",
+    "ibu_kota": "Manokwari",
+    "luas_km2": 60275.33,
+    "jumlah_penduduk": 587650,
+    "budaya": {
+        "baju_adat": "Koteka/Holim, Rok Rumbai/Rumbia dan Baju Kurung",
+        "tarian": "Tari Yospan (Yosim Pancar), Tarian Perang&Ritual, Suling Tambur",
+        "rumah_adat": "Rumah Honai, Rumah Ebe'ai dan Rumah Kaki Seribu Mod Aki Aksa",
+        "senjata_tradisional": "Tombak, Kapak Batu dan Alat Tusuk Tulang Kuskus",
+        "makanan_khas": "Papeda, Sagu Lempeng dan Udang Selingkuh",
+        "warisan_budaya": "Tari Yospan, Suling Tambur dan tradisi arsitektur Mod Aki Aksa (Rumah Kaki Seribu)",
+        "cagar_budaya": "Rumah Kaki Seribu Mod Aki Aksa",
+        "alat_musik": "Tifa, Suling Tambur dan Ukulele/Juk",
+        "flora": "Pisang Musa Ingens",
+        "flora_latin": "Musa ingens",
+        "flora_english": "Giant Banana",
+        "fauna": "Burung Cendrawasih Merah",
+        "fauna_latin": "Paradisaea rubra",
+        "fauna_english": "Red Bird-of-paradise"
+    }
+}

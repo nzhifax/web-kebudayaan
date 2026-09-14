@@ -1,0 +1,23 @@
+{
+    "id": "IN15",
+    "nama": "Kalimantan Timur",
+    "ibu_kota": "Samarinda",
+    "luas_km2": 126981.279,
+    "jumlah_penduduk": 4267600,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Kustin",
+        "tarian": "Tari Hudoq, Tari Hudoq Mahakam Ulu dan Tari Datun Ngentau",
+        "rumah_adat": "Rumah Lamin, Rumah Betang dan Rumah Paser",
+        "senjata_tradisional": "Gayang, Tombak dan Mandau",
+        "makanan_khas": "Nasi Bekepor, Sayur Gangan Asam Kutai dan Sate Payau",
+        "warisan_budaya": "Tari Hudoq, Tari Kencet Lado dan Tari Ganjur",
+        "cagar_budaya": "Prasasti Muara Kaman, Museum Gunung Selendang dan Kompleks Makam di Sangasanga",
+        "alat_musik": "Sampe, Ketipung dan Jatung Adau",
+        "flora": "Anggrek Hitam",
+        "flora_latin": "Coelogyne Pandurata",
+        "flora_english": "Black Orchid",
+        "fauna": "Pesut Mahakam",
+        "fauna_latin": "Orcaella Brevirostris",
+        "fauna_english": "Irrawaddy Dolphin"
+    }
+}

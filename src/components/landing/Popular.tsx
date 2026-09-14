@@ -1,61 +1,134 @@
+import { Link } from "@tanstack/react-router";
+import { ArrowRight, Compass, MapPin } from "lucide-react";
 import kecak from "@/assets/culture-kecak.jpg";
 import gadang from "@/assets/culture-gadang.jpg";
 import angklung from "@/assets/culture-angklung.jpg";
 import reog from "@/assets/culture-reog.jpg";
 import wayang from "@/assets/culture-wayang.jpg";
 import batik from "@/assets/culture-batik.jpg";
-import { Heart } from "lucide-react";
 
-const items = [
-  { title: "Tari Kecak", region: "Bali", tag: "Tari", img: kecak, color: "bg-terracotta" },
-  { title: "Rumah Gadang", region: "Sumatera Barat", tag: "Rumah Adat", img: gadang, color: "bg-gold" },
-  { title: "Angklung", region: "Jawa Barat", tag: "Musik", img: angklung, color: "bg-forest" },
-  { title: "Reog", region: "Ponorogo", tag: "Tradisi", img: reog, color: "bg-terracotta" },
-  { title: "Wayang", region: "Jawa Tengah", tag: "Cerita", img: wayang, color: "bg-ocean" },
-  { title: "Batik", region: "Nusantara", tag: "Pakaian", img: batik, color: "bg-gold" },
+const islands = [
+  {
+    name: "Sumatera",
+    count: "10 Provinsi",
+    icon: "🗡️",
+    highlight: "Rumah Gadang & Tari Saman",
+    img: gadang,
+    color: "from-amber-500 to-orange-600",
+  },
+  {
+    name: "Jawa",
+    count: "6 Provinsi",
+    icon: "🎭",
+    highlight: "Angklung, Wayang & Reog",
+    img: angklung,
+    color: "from-blue-500 to-indigo-600",
+  },
+  {
+    name: "Kalimantan",
+    count: "5 Provinsi",
+    icon: "🏞️",
+    highlight: "Tari Mandau & Rumah Betang",
+    img: batik,
+    color: "from-emerald-500 to-teal-600",
+  },
+  {
+    name: "Sulawesi",
+    count: "6 Provinsi",
+    icon: "⛵",
+    highlight: "Perahu Pinisi & Rumah Tongkonan",
+    img: wayang,
+    color: "from-purple-500 to-pink-600",
+  },
+  {
+    name: "Bali & Nusa Tenggara",
+    count: "3 Provinsi",
+    icon: "🏝️",
+    highlight: "Tari Kecak & Rumah Mbaru Niang",
+    img: kecak,
+    color: "from-rose-500 to-red-600",
+  },
+  {
+    name: "Maluku & Papua",
+    count: "8 Provinsi",
+    icon: "🕊️",
+    highlight: "Tari Cendrawasih & Rumah Honai",
+    img: reog,
+    color: "from-teal-500 to-emerald-700",
+  },
 ];
 
 export function Popular() {
   return (
-    <section id="budaya" className="relative py-20 md:py-28 bg-gradient-to-b from-transparent to-white">
+    <section id="provinsi" className="relative py-24 md:py-32 bg-white font-[family-name:var(--font-body)] overflow-hidden select-none">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="flex items-end justify-between flex-wrap gap-4 mb-10">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div>
-            <span className="inline-block bg-terracotta text-terracotta-foreground rounded-full px-4 py-1.5 text-sm font-bold mb-4">
-              Populer minggu ini
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Budaya yang lagi dijelajahi</h2>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-blue-900 border border-blue-200 text-xs font-black mb-3">
+              <MapPin className="size-4 text-blue-600" />
+              <span>Jelajah Wilayah</span>
+            </div>
+            <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+              Jelajahi 38 Provinsi Nusantara
+            </h2>
+            <p className="mt-2 text-base text-slate-600 font-bold max-w-lg">
+              Setiap pulau memiliki keunikan budaya, musik, dan cerita rakyatnya masing-masing.
+            </p>
           </div>
-          <a href="#" className="font-semibold text-ocean hover:underline underline-offset-4">
-            Lihat semua →
-          </a>
+
+          <Link
+            to="/peta"
+            className="inline-flex items-center gap-2 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold px-6 py-3 text-xs shadow-lg transition-all"
+          >
+            <span>Buka Peta Interaktif</span>
+            <ArrowRight className="size-4" />
+          </Link>
         </div>
 
-        <div className="flex gap-5 overflow-x-auto pb-4 -mx-6 px-6 snap-x snap-mandatory">
-          {items.map((it) => (
-            <article key={it.title} className="snap-start shrink-0 w-[280px] md:w-[320px] card-soft rounded-[2rem] overflow-hidden group hover:-translate-y-1 transition">
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <img src={it.img} alt={it.title} className="size-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width={800} height={800} />
-                <span className={`absolute top-3 left-3 ${it.color} text-white rounded-full px-3 py-1 text-xs font-bold shadow-[var(--shadow-soft)]`}>
-                  {it.tag}
-                </span>
-                <button className="absolute top-3 right-3 size-10 rounded-full bg-white/90 grid place-items-center shadow-[var(--shadow-soft)] hover:bg-white">
-                  <Heart className="size-5 text-terracotta" />
-                </button>
+        {/* Islands Cards Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {islands.map((island) => (
+            <Link
+              key={island.name}
+              to="/peta"
+              className="group relative rounded-[2.5rem] overflow-hidden bg-slate-900 p-7 text-white shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[300px] flex flex-col justify-between"
+            >
+              {/* Background Thumbnail Image */}
+              <div className="absolute inset-0 z-0 opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-500">
+                <img
+                  src={island.img}
+                  alt={island.name}
+                  className="size-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent" />
               </div>
-              <div className="p-5">
-                <div className="text-xs text-muted-foreground font-bold uppercase tracking-wider">{it.region}</div>
-                <h3 className="text-xl font-bold text-foreground mt-1">{it.title}</h3>
-                <div className="mt-4 flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-sm">
-                    <span className="text-gold">⭐</span>
-                    <span className="font-bold text-foreground">4.9</span>
-                    <span className="text-muted-foreground">· 1.2k</span>
-                  </div>
-                  <span className="rounded-full bg-cream px-3 py-1 text-xs font-bold text-foreground">+15 XP</span>
+
+              {/* Top Row: Icon & Count */}
+              <div className="relative z-10 flex items-center justify-between">
+                <div className="size-14 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 grid place-items-center text-2xl shadow-md">
+                  {island.icon}
+                </div>
+                <span className="px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs font-black">
+                  {island.count}
+                </span>
+              </div>
+
+              {/* Bottom Row: Island Info */}
+              <div className="relative z-10">
+                <h3 className="text-2xl font-black tracking-tight mb-1 text-amber-300">
+                  {island.name}
+                </h3>
+                <p className="text-xs font-bold text-slate-200">
+                  ✨ {island.highlight}
+                </p>
+
+                <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-black text-white group-hover:text-amber-400 transition-colors">
+                  <span>Mulai Jelajah</span>
+                  <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

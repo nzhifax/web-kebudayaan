@@ -9,14 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as PetaRouteImport } from './routes/peta'
-import { Route as KuisRouteImport } from './routes/kuis'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KuisRouteImport } from './routes/kuis'
+import { Route as PetaRouteImport } from './routes/peta'
 import { Route as ProvinsiIdRouteImport } from './routes/provinsi.$id'
 
-const PetaRoute = PetaRouteImport.update({
-  id: '/peta',
-  path: '/peta',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KuisRoute = KuisRouteImport.update({
@@ -24,9 +24,9 @@ const KuisRoute = KuisRouteImport.update({
   path: '/kuis',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const PetaRoute = PetaRouteImport.update({
+  id: '/peta',
+  path: '/peta',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProvinsiIdRoute = ProvinsiIdRouteImport.update({
@@ -71,11 +71,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/peta': {
-      id: '/peta'
-      path: '/peta'
-      fullPath: '/peta'
-      preLoaderRoute: typeof PetaRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/kuis': {
@@ -85,11 +85,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KuisRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/peta': {
+      id: '/peta'
+      path: '/peta'
+      fullPath: '/peta'
+      preLoaderRoute: typeof PetaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/provinsi/$id': {

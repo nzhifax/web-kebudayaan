@@ -1,40 +1,78 @@
-import { Link } from "@tanstack/react-router";
-import { Compass, Search, Trophy } from "lucide-react";
+import { Link, useLocation } from "@tanstack/react-router";
+import { Home, Map, Gamepad2, Info, BookOpen } from "lucide-react";
+import logoIcon from "@/assets/logo-icon.png";
 
 export function Nav() {
+  const location = useLocation();
+  const pathname = location.pathname;
+
+  const isHomeActive = pathname === "/";
+  const isPetaActive = pathname === "/peta";
+  const isKuisActive = pathname === "/kuis";
+
   return (
     <header className="absolute top-0 inset-x-0 z-30">
       <div className="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="size-11 rounded-2xl bg-terracotta grid place-items-center shadow-[var(--shadow-pop)]">
-            <Compass className="size-6 text-terracotta-foreground" strokeWidth={2.5} />
-          </div>
-          <div className="font-[family-name:var(--font-display)] leading-tight">
-            <div className="text-lg font-bold text-foreground">Jelajah Budaya</div>
-            <div className="text-xs text-muted-foreground -mt-1">Nusantara</div>
-          </div>
-        </Link>
+        {/* Left: Logo */}
+        <div className="flex-1 flex items-center justify-start">
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="relative transition-transform duration-300 group-hover:rotate-12 shrink-0">
+              <img src={logoIcon} alt="Logo" className="size-11 object-contain drop-shadow-[0_2px_8px_rgba(217,119,6,0.15)]" />
+            </div>
+            <div className="font-[family-name:var(--font-display)] leading-none">
+              <div className="text-xl font-black text-slate-800 tracking-tight">Jelajah</div>
+              <div className="text-sm font-extrabold text-slate-500">Nusantara</div>
+            </div>
+          </Link>
+        </div>
 
-        <nav className="hidden md:flex items-center gap-1 rounded-full bg-white/70 backdrop-blur border border-white/60 px-2 py-2 shadow-[var(--shadow-soft)]">
-          <Link to="/peta" className="px-4 py-2 rounded-full text-sm font-semibold text-foreground/80 hover:bg-gold/40 hover:text-foreground transition">Peta</Link>
-          <a href="#provinsi" className="px-4 py-2 rounded-full text-sm font-semibold text-foreground/80 hover:bg-gold/40 hover:text-foreground transition">Provinsi</a>
-          <a href="#budaya" className="px-4 py-2 rounded-full text-sm font-semibold text-foreground/80 hover:bg-gold/40 hover:text-foreground transition">Budaya</a>
-          <Link to="/kuis" className="px-4 py-2 rounded-full text-sm font-semibold text-foreground/80 hover:bg-gold/40 hover:text-foreground transition">Kuis</Link>
-          <a href="#tentang" className="px-4 py-2 rounded-full text-sm font-semibold text-foreground/80 hover:bg-gold/40 hover:text-foreground transition">Tentang</a>
+        {/* Center: Navigation Pill */}
+        <nav className="hidden md:flex items-center gap-1.5 rounded-full bg-white/90 backdrop-blur border border-white/60 px-2 py-1.5 shadow-[var(--shadow-soft)]">
+          <Link
+            to="/"
+            className={`px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition ${
+              isHomeActive
+                ? "bg-emerald-500/10 text-emerald-800"
+                : "text-slate-600 hover:bg-slate-100 hover:text-slate-800"
+            }`}
+          >
+            <Home className="size-4" />
+            Beranda
+          </Link>
+          <Link
+            to="/peta"
+            className={`px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition ${
+              isPetaActive
+                ? "bg-emerald-500/10 text-emerald-800"
+                : "text-slate-600 hover:bg-slate-100 hover:text-slate-800"
+            }`}
+          >
+            <Map className="size-4" />
+            Peta
+          </Link>
+          <Link
+            to="/kuis"
+            className={`px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition ${
+              isKuisActive
+                ? "bg-emerald-500/10 text-emerald-800"
+                : "text-slate-600 hover:bg-slate-100 hover:text-slate-800"
+            }`}
+          >
+            <Gamepad2 className="size-4" />
+            Kuis
+          </Link>
+          <Link
+            to="/peta"
+            search={{ passport: true }}
+            className="px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 text-slate-600 hover:bg-slate-100 hover:text-slate-800 transition"
+          >
+            <BookOpen className="size-4 text-slate-500" />
+            Paspor
+          </Link>
         </nav>
 
-        <div className="flex items-center gap-2">
-          <button
-            aria-label="Cari"
-            className="size-11 rounded-2xl bg-white/80 border border-white/60 grid place-items-center shadow-[var(--shadow-soft)] hover:bg-white transition"
-          >
-            <Search className="size-5 text-foreground" />
-          </button>
-          <button className="hidden sm:inline-flex items-center gap-2 rounded-2xl bg-gold px-4 py-2.5 text-gold-foreground font-semibold shadow-[0_5px_0_oklch(0.72_0.16_82)] hover:-translate-y-0.5 transition">
-            <Trophy className="size-4" />
-            Login
-          </button>
-        </div>
+        {/* Right: Spacer for centering navbar pill */}
+        <div className="hidden md:flex flex-1 justify-end" />
       </div>
     </header>
   );

@@ -1,0 +1,23 @@
+{
+    "id": "IN24",
+    "nama": "Papua",
+    "ibu_kota": "Jayapura",
+    "luas_km2": 82680.95,
+    "jumlah_penduduk": 1073640,
+    "budaya": {
+        "baju_adat": "Koteka/Holim, Rok Rumbai/Rumbia dan Pakaian Sali",
+        "tarian": "Tari Perang, Tari Bakar Batu dan Tari Yospan",
+        "rumah_adat": "Rumah Honai, Rumah Ebe'ai dan Rumah Kariwari",
+        "senjata_tradisional": "Parang, Kapak Batu dan Pisau Belati Tulang Kasuari",
+        "makanan_khas": "Papeda dan ikan bakar khas pesisir Papua Barat",
+        "warisan_budaya": "Pakaian adat (koteka, Yokal, Sali, rok rumbai) dan Tradisi rumah adat (honai, ebe’ai)",
+        "cagar_budaya": "Rumah Adat Honai",
+        "alat_musik": "Tifa",
+        "flora": "Matoa",
+        "flora_latin": "Pometia Pinnata",
+        "flora_english": "Fijian Longan",
+        "fauna": "Burung Cendrawasih 12 Kawat",
+        "fauna_latin": "Seleucidis Melanoleucus",
+        "fauna_english": "Twelve-wired Bird-of-paradise"
+    }
+}

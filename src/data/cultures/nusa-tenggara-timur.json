@@ -1,0 +1,23 @@
+{
+    "id": "IN23",
+    "nama": "Nusa Tenggara Timur",
+    "ibu_kota": "Kupang",
+    "luas_km2": 46446.64,
+    "jumlah_penduduk": 5742560,
+    "budaya": {
+        "baju_adat": "Baju Sabu, Amarasi dan Ikat Patola",
+        "tarian": "Tari Perang, Tari Gareng Lameng dan Tari Tebe",
+        "rumah_adat": "Rumah Adat Mbaru Niang, Rumah Adat Musalaki dan Rumah Adat Sao Ngada",
+        "senjata_tradisional": "Hemola",
+        "makanan_khas": "Katemak",
+        "warisan_budaya": "Tradisi tari Lendo dan Ritual khitan (Gareng Lameng)",
+        "cagar_budaya": "Rumah Adat NTT",
+        "alat_musik": "Sasando, Gendang dan Kompang",
+        "flora": "Cendana",
+        "flora_latin": "Santalum Album",
+        "flora_english": "Indian Sandalwood",
+        "fauna": "Komodo/ Ora",
+        "fauna_latin": "Varanus Komodoensis",
+        "fauna_english": "Komodo Dragon"
+    }
+}

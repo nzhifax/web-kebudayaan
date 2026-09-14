@@ -1,64 +1,72 @@
-import girl from "@/assets/mascot-girl.png";
-import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import mascotExplorer from "@/assets/mascot-explorer.png";
+import { ArrowRight, Compass } from "lucide-react";
 
 export function CtaFooter() {
   return (
     <>
-      <section className="relative py-20 md:py-28">
+      <section className="relative py-24 md:py-32 font-[family-name:var(--font-body)] bg-sky-50/50 select-none">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-ocean via-ocean to-forest text-white p-10 md:p-16">
-            <div className="absolute -right-8 bottom-0 w-64 md:w-80 opacity-95">
-              <img src={girl} alt="" className="w-full h-auto animate-float" width={768} height={1024} />
+          <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-terracotta via-amber-500 to-amber-600 text-white p-10 md:p-16 shadow-2xl border-4 border-white">
+            <div className="absolute -right-6 -bottom-6 w-64 md:w-80 opacity-95">
+              <img src={mascotExplorer} alt="Pongo Maskot" className="w-full h-auto object-contain animate-float drop-shadow-2xl" />
             </div>
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-8 left-10 size-32 rounded-full bg-gold blur-2xl" />
-              <div className="absolute bottom-6 left-40 size-40 rounded-full bg-terracotta blur-3xl" />
-            </div>
-            <div className="relative max-w-xl">
-              <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-bold leading-tight">
-                Siap berangkat, penjelajah?
+
+            <div className="relative z-10 max-w-xl">
+              <span className="px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-xs font-black border border-white/30 mb-4 inline-block">
+                🧭 Petualangan Menunggumu!
+              </span>
+              <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+                Siap Berangkat, Penjelajah?
               </h2>
-              <p className="mt-4 text-lg text-white/90">
-                Buat akun gratis dan mulai perjalananmu keliling Nusantara hari ini.
+              <p className="mt-4 text-base md:text-lg font-bold text-amber-100 leading-relaxed">
+                Mulai perjalananmu keliling 38 provinsi Indonesia sekarang. Kumpulkan stempel, lencana, dan jadi Master Nusantara!
               </p>
-              <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold text-gold-foreground px-7 py-4 text-lg font-bold shadow-[0_8px_0_oklch(0.72_0.16_82)] hover:-translate-y-0.5 transition">
-                Mulai Menjelajah
-                <ArrowRight className="size-5" />
-              </button>
+              <Link
+                to="/peta"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-black px-8 py-4 text-base md:text-lg shadow-2xl transition-all hover:scale-105 border-2 border-white/40"
+              >
+                <Compass className="size-6 text-amber-400 animate-spin-slow" />
+                <span>Mulai Menjelajah Sekarang</span>
+                <ArrowRight className="size-5 stroke-[3]" />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="bg-foreground text-white/80 pt-16 pb-10">
+      <footer className="bg-slate-950 text-white/80 pt-16 pb-10 font-[family-name:var(--font-body)] border-t border-slate-800">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid md:grid-cols-4 gap-10 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <div className="size-10 rounded-2xl bg-terracotta grid place-items-center">🧭</div>
-                <div className="font-[family-name:var(--font-display)] font-bold text-white text-lg">Jelajah Budaya Nusantara</div>
+                <div className="size-10 rounded-full bg-amber-500 grid place-items-center text-slate-900 font-bold">🧭</div>
+                <div className="font-[family-name:var(--font-display)] font-black text-white text-lg">Jelajah Nusantara</div>
               </div>
-              <p className="text-sm">Platform WebGIS edukasi budaya Indonesia untuk pelajar SD, SMP, dan SMA.</p>
+              <p className="text-xs font-bold text-slate-400 leading-relaxed">
+                Platform WebGIS edukasi budaya Indonesia yang interaktif untuk pelajar SD, SMP, dan SMA.
+              </p>
             </div>
             {[
-              { title: "Jelajahi", items: ["Peta Interaktif", "Provinsi", "Story Map", "Galeri"] },
-              { title: "Belajar", items: ["Kuis", "Lencana", "Misi Harian", "Untuk Guru"] },
-              { title: "Tentang", items: ["Tentang Kami", "Sumber Data", "Kontak", "Privasi"] },
+              { title: "Jelajahi", items: ["Peta Interaktif", "38 Provinsi", "Story Map", "Galeri Budaya"], to: "/peta" },
+              { title: "Belajar", items: ["Kuis Interaktif", "Koleksi Lencana", "Misi Harian", "Untuk Sekolah"], to: "/kuis" },
+              { title: "Tentang", items: ["Tentang Kami", "Sumber Data", "Kontak", "Kebijakan Privasi"], to: "/tentang" },
             ].map((col) => (
               <div key={col.title}>
-                <div className="font-bold text-white mb-3">{col.title}</div>
-                <ul className="space-y-2 text-sm">
+                <div className="font-black text-white text-sm mb-4 uppercase tracking-wider">{col.title}</div>
+                <ul className="space-y-2.5 text-xs font-bold text-slate-400">
                   {col.items.map((it) => (
-                    <li key={it}><a href="#" className="hover:text-gold transition">{it}</a></li>
+                    <li key={it}><Link to={col.to} className="hover:text-amber-400 transition-colors">{it}</Link></li>
                   ))}
                 </ul>
               </div>
             ))}
           </div>
-          <div className="border-t border-white/10 pt-6 flex flex-wrap justify-between items-center gap-3 text-sm">
-            <div>© 2026 Jelajah Budaya Nusantara. Dibuat untuk pelajar Indonesia.</div>
+          <div className="border-t border-slate-800/80 pt-6 flex flex-wrap justify-between items-center gap-3 text-xs font-bold text-slate-500">
+            <div>© 2026 Jelajah Nusantara. Dibuat dengan ❤ untuk pelajar Indonesia.</div>
             <div className="flex items-center gap-4">
-              <span>Data: BIG · Kemendikbud</span>
+              <span>Syarat & Ketentuan</span>
+              <span>Privasi</span>
             </div>
           </div>
         </div>

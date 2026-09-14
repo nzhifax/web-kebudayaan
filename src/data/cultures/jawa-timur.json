@@ -1,0 +1,23 @@
+{
+    "id": "IN11",
+    "nama": "Jawa Timur",
+    "ibu_kota": "Surabaya",
+    "luas_km2": 48036.84,
+    "jumlah_penduduk": 42089271,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Pesa'an, Kebaya Rancongan dan Baju Cak-Ning Surabaya",
+        "tarian": "Reog Ponorogo, Tari Jaranan Buto dan Topeng Malangan",
+        "rumah_adat": "Rumah Osing, Rumah Tengger dan Rumah Tanean Lanjhang",
+        "senjata_tradisional": "Keris, Clurit dan Kudi",
+        "makanan_khas": "Rawon, Soto Lamongan dan Rujak Cingur",
+        "warisan_budaya": "Wayang Topeng Malang, Reog Ponorogo dan Jaran Kencak",
+        "cagar_budaya": "Candi Trowulan, Candi Penataran dan Hotel Majapahit",
+        "alat_musik": "Gamelan Jawa Timur, Angklung Caruk dan Terompet Reog",
+        "flora": "Bunga Sedap Malam",
+        "flora_latin": "Polyanthes Tuberosa",
+        "flora_english": "Tuberose",
+        "fauna": "Ayam Bekisar",
+        "fauna_latin": "Gallus Varius",
+        "fauna_english": "Green Junglefowl, Javan Junglefowl, Forktail"
+    }
+}

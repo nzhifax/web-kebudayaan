@@ -1,0 +1,23 @@
+{
+    "id": "IN09",
+    "nama": "Jawa Barat",
+    "ibu_kota": "Bandung",
+    "luas_km2": 37040.04,
+    "jumlah_penduduk": 50759000,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Bedahan dan Kebaya Sunda",
+        "tarian": "Tari Jaipong, Tari Merak dan Topeng Cirebon",
+        "rumah_adat": "Rumah Julung Ngapak, Rumah Jolopong dan Rumah Capit Gunting",
+        "senjata_tradisional": "Kujang",
+        "makanan_khas": "Nasi Timbel, Karedok dan Tahu Sumedang",
+        "warisan_budaya": "Jaipong, Topeng Cirebon dan Sisingaan",
+        "cagar_budaya": "Keraton Kasepuhan Cirebon",
+        "alat_musik": "Angklung, Gamelang Degung dan Tarawangsa",
+        "flora": "Gandaria",
+        "flora_latin": "Bouea Macrophylla Griffith",
+        "flora_english": "Plum Mango",
+        "fauna": "Macan Tutul Jawa",
+        "fauna_latin": "Panthera pardus melas",
+        "fauna_english": "Java Leopard"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "IN32",
+    "nama": "Sulawesi Selatan",
+    "ibu_kota": "Makassar",
+    "luas_km2": 45330.55,
+    "jumlah_penduduk": 9563130,
+    "budaya": {
+        "baju_adat": "Baju Bodo, Baju Bella Dada dan Baju Labbu",
+        "tarian": "Tarian Bugis-Makassar dan Tarian Toraja",
+        "rumah_adat": "Rumah Adat Bugis, Rumah Tongkonan dan Rumah Mandar",
+        "senjata_tradisional": "Badik, Gayang dan Keris Passatimpo",
+        "makanan_khas": "Bolu Bandeng dan Sup Ikan",
+        "warisan_budaya": "Baju Bodo, Baju Pokko’ dan ritual Toraja seperti Rambu Solo’",
+        "cagar_budaya": "Rumah Balla Lompoa dan Masjid Katangka",
+        "alat_musik": "Gendang dan Gong",
+        "flora": "Pohon Buah Lontar",
+        "flora_latin": "Borassus Flabellifer",
+        "flora_english": "Palmyra Palm",
+        "fauna": "Burung Julang Sulawesi",
+        "fauna_latin": "Rhyticeros Cassidix / Aceros cassidix",
+        "fauna_english": "Knobbed Hornbill, Sulawesi Red-knobbed Hornbill"
+    }
+}

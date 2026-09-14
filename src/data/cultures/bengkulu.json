@@ -1,0 +1,23 @@
+{
+    "id": "IN04",
+    "nama": "Bengkulu",
+    "ibu_kota": "Bengkulu",
+    "luas_km2": 20130.21,
+    "jumlah_penduduk": 2138044,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Rejang Lebong",
+        "tarian": "Tari Andun, Tari Bidadari Teminang Anak dan Tari Tabot",
+        "rumah_adat": "Rumah Bubungan Lima",
+        "senjata_tradisional": "Rudus, Rambai Ayam dan Keris Terapang",
+        "makanan_khas": "Pendap, Kue Tat dan Bagar Hiu",
+        "warisan_budaya": "Tabut",
+        "cagar_budaya": "Kampung Cina, Benteng Marlborough dan Rumah Ibu Fatmawati",
+        "alat_musik": "Doll/Doli, Gendang Panjang dan Redap",
+        "flora": "Bunga Bangkai",
+        "flora_latin": "Rafflesia Arnoldii",
+        "flora_english": "Corpse Flower",
+        "fauna": "Beruang Madu",
+        "fauna_latin": "Helarctos malayanus",
+        "fauna_english": "Sun Bear"
+    }
+}

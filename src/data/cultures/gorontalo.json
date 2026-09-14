@@ -1,0 +1,23 @@
+{
+    "id": "IN07",
+    "nama": "Gorontalo",
+    "ibu_kota": "Gorontalo",
+    "luas_km2": 12025.147,
+    "jumlah_penduduk": 1242240,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Biliu dan Makuta",
+        "tarian": "Tari Dana Dana, Tari Saronde dan Tari Biteya",
+        "rumah_adat": "Rumah Adat Dulohupa, Rumah Adat Bantayo Poboide dan Rumah Adat Ma'lihe",
+        "senjata_tradisional": "Parang Aliyawo, Keris Baladu dan Tombak Totobu’o",
+        "makanan_khas": "Sate Balanga, Binte Biluhuta dan Lalampa",
+        "warisan_budaya": "Binte Biluhuta",
+        "cagar_budaya": "Bandayo Poboide",
+        "alat_musik": "Wahulo, Polopalo, dan Gambusi",
+        "flora": "Gofasa",
+        "flora_latin": "Vitex Cofassus",
+        "flora_english": "Bitti",
+        "fauna": "Ikan Bulalao",
+        "fauna_latin": "Planiliza Subviridis",
+        "fauna_english": "Dussumier Mullet"
+    }
+}

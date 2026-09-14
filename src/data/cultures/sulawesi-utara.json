@@ -1,0 +1,23 @@
+{
+    "id": "IN35",
+    "nama": "Sulawesi Utara",
+    "ibu_kota": "Manado",
+    "luas_km2": 14500.28,
+    "jumlah_penduduk": 2721440,
+    "budaya": {
+        "baju_adat": "Pakaian Ikan Duyung, Baju Tatutu dan Walian Wangko",
+        "tarian": "Tari Kabasaran, Tari Maengket dan Tari Lenso Tatengesan",
+        "rumah_adat": "Rumah Walewangko",
+        "senjata_tradisional": "Pedang Bara Sangihe, Peda, Tombak dan Perisai",
+        "makanan_khas": "Cakalang Fufu, Gohu Manado dan Tinutuan",
+        "warisan_budaya": "Kolintang dan Genre Oli",
+        "cagar_budaya": "Rumah Walewangko",
+        "alat_musik": "Kolintang, Salude dan Oli",
+        "flora": "Longusei",
+        "flora_latin": "Ficus Minahasae",
+        "flora_english": "Fig Tree",
+        "fauna": "Tangkasi",
+        "fauna_latin": "Tarsius Spectrum",
+        "fauna_english": "Tarsius"
+    }
+}

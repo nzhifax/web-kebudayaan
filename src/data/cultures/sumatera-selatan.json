@@ -1,0 +1,23 @@
+{
+    "id": "IN37",
+    "nama": "Sumatera Selatan",
+    "ibu_kota": "Palembang",
+    "luas_km2": 86771.68,
+    "jumlah_penduduk": 8928515,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Aesan Gede dan Aesan Pak Sangko",
+        "tarian": "Tari Tanggai dan Dulmuluk",
+        "rumah_adat": "Rumah Limas",
+        "senjata_tradisional": "Trisula dan Keris Sumsel",
+        "makanan_khas": "Pempek, Tekwan, Pindang Patin",
+        "warisan_budaya": "Songket Palembang, Tari Tanggai dan Syair Dulmuluk",
+        "cagar_budaya": "Rumah Limas",
+        "alat_musik": "Gandang dan Gong",
+        "flora": "Pohon Buah Duku",
+        "flora_latin": "Lansium Domesticum",
+        "flora_english": "Langsat",
+        "fauna": "Ikan Belida",
+        "fauna_latin": "Chitala Lopis",
+        "fauna_english": "Knifefish/Featherback"
+    }
+}

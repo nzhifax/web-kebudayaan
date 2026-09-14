@@ -1,0 +1,23 @@
+{
+    "id": "IN36",
+    "nama": "Sumatera Barat",
+    "ibu_kota": "Padang",
+    "luas_km2": 42119.542,
+    "jumlah_penduduk": 59143000,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Bundo Kanduang",
+        "tarian": "Tari Piring dan Tari Payung",
+        "rumah_adat": "Rumah Gadang",
+        "senjata_tradisional": "Karih",
+        "makanan_khas": "Rendang, Sate Padang dan Bubur Kampiun",
+        "warisan_budaya": "Pakaian adat Bundo Kanduang dan Karih, Tari Piring, dan Tari Payung",
+        "cagar_budaya": "Rumah Gadang",
+        "alat_musik": "Saluang",
+        "flora": "Pohon Andalas, Bebesaran, Hole Tanduk (Batak), Andaleh (Minangkabau), Kertau (Sunda)",
+        "flora_latin": "Morus Macroura",
+        "flora_english": "Sumatran Mulberry",
+        "fauna": "Kuau Raja, Kuang",
+        "fauna_latin": "Argusianus Argus",
+        "fauna_english": "Great Argus"
+    }
+}

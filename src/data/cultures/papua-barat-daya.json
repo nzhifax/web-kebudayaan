@@ -1,0 +1,23 @@
+{
+    "id": "IN26",
+    "nama": "Papua Barat Daya",
+    "ibu_kota": "Sorong",
+    "luas_km2": 39122.95,
+    "jumlah_penduduk": 636434,
+    "budaya": {
+        "baju_adat": "Koteka/Holim, Sali dan Ewer/Serui",
+        "tarian": "Tari Selamat Datang dan Tari Yospan",
+        "rumah_adat": "Rumah Honai dan Rumah Kaki Seribu Mod Aki Aksa",
+        "senjata_tradisional": "Busur & Anak Panah, Tombak dan Pisau Belati",
+        "makanan_khas": "Papeda, Ikan Bakar Manokwari",
+        "warisan_budaya": "Honai, Koteka dan Yokal",
+        "cagar_budaya": "Rumah Kaki Seribu Mod Aki Aksa",
+        "alat_musik": "Guoto",
+        "flora": "Buah Merah",
+        "flora_latin": "Pandanus Conoideus Lam",
+        "flora_english": "Red Fruit",
+        "fauna": "Kuskus Waigeo",
+        "fauna_latin": "Spilocuscus Papuensis",
+        "fauna_english": "Kuskus Scham-Scham"
+    }
+}

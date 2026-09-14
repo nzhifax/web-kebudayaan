@@ -1,0 +1,23 @@
+{
+    "id": "IN27",
+    "nama": "Papua Pegunungan",
+    "ibu_kota": "Jayawijaya",
+    "luas_km2": 51213.33,
+    "jumlah_penduduk": 1484.86,
+    "budaya": {
+        "baju_adat": "Koteka/Holim, Rok Rumbai/Rumibia dan Baju Kurung",
+        "tarian": "Tari Perang Papua, Tari Aniri",
+        "rumah_adat": "Rumah Honai, Rumah Ebe'ai dan Rumah Wamai",
+        "senjata_tradisional": "Tombak (Tul/Mensa), Busur&Panah (Fela) dan Parang Jalowy",
+        "makanan_khas": "Papeda, Sate ulat sagu dan Bakar batu",
+        "warisan_budaya": "Noken, rumah Honai dan tarian perang",
+        "cagar_budaya": "Honai dan Noken",
+        "alat_musik": "Tifa dan Suling Tambur",
+        "flora": "Woromo",
+        "flora_latin": "Pandanus Yilunea",
+        "flora_english": "Pandanus Yilunea",
+        "fauna": "Bakaga",
+        "fauna_latin": "Dendrolagus Mbaiso",
+        "fauna_english": "Dingiso"
+    }
+}

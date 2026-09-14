@@ -1,0 +1,23 @@
+{
+    "id": "IN18",
+    "nama": "Kepulauan Riau",
+    "ibu_kota": "Tanjung Pinang",
+    "luas_km2": 8269.71,
+    "jumlah_penduduk": 2213500,
+    "budaya": {
+        "baju_adat": "Baju Teluk Belanga dan Kebaya Labuh",
+        "tarian": "Tari Zapin, Tari Sekapur Sirih, dan Tari Makyong",
+        "rumah_adat": "Rumah Belah Bubung, Limas Potong dan Balai Salaso Jatuh",
+        "senjata_tradisional": "Pedang Janawi, Klewang dan Beladau",
+        "makanan_khas": "Gonggong, Mie Lendir dan Nasi Lemak",
+        "warisan_budaya": "Rumah Lontiok, Zapin Api dan Tepuk Tepung Tawar",
+        "cagar_budaya": "Istana Rokan Hulu",
+        "alat_musik": "Nafiri, Gambus Melayu dan Akordeon/Kordeon",
+        "flora": "Tanaman Sirih",
+        "flora_latin": "Piper Betle",
+        "flora_english": "Betel",
+        "fauna": "Ikan Kakap Merah",
+        "fauna_latin": "Lutjanus Argentimaculatus",
+        "fauna_english": "Red Snapper"
+    }
+}

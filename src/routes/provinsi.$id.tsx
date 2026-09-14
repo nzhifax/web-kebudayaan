@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, Compass, Home, Music, UtensilsCrossed, Drum, MapPin, Sparkles } from "lucide-react";
+import { ArrowLeft, Compass, Home, Music, UtensilsCrossed, Drum, MapPin, Sparkles, Flower, Footprints } from "lucide-react";
 import { provinces, islandColors } from "@/lib/provinces-data";
 
 export const Route = createFileRoute("/provinsi/$id")({
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/provinsi/$id")({
       meta: [
         { title: `${p.name} — Budaya, Rumah Adat & Tradisi` },
         { name: "description", content: `Jelajahi budaya ${p.name}: ${p.rumahAdat}, ${p.tarian}, ${p.makanan}, dan ${p.alatMusik}.` },
-        { property: "og:title", content: `${p.name} — Jelajah Budaya Nusantara` },
+        { property: "og:title", content: `${p.name} — Jelajah Nusantara` },
         { property: "og:description", content: `Rumah adat ${p.rumahAdat}, tarian ${p.tarian}, kuliner ${p.makanan}.` },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
@@ -36,6 +36,8 @@ function ProvinsiPage() {
     { icon: Music, label: "Tarian", val: p.tarian, tone: "bg-ocean text-ocean-foreground", story: "Tarian yang menyimpan cerita, doa, dan kegembiraan komunitas." },
     { icon: UtensilsCrossed, label: "Kuliner", val: p.makanan, tone: "bg-forest text-forest-foreground", story: "Cita rasa khas yang lahir dari kekayaan bumi dan warisan turun-temurun." },
     { icon: Drum, label: "Alat Musik", val: p.alatMusik, tone: "bg-gold text-gold-foreground", story: "Suara khas yang mengiringi ritual, perayaan, dan hiburan sehari-hari." },
+    { icon: Flower, label: "Flora Khas", val: `${p.flora} (${p.floraLatin})`, tone: "bg-emerald-600 text-white", story: p.floraEnglish ? `Dikenal juga sebagai ${p.floraEnglish}. Keanekaragaman hayati kebanggaan daerah.` : "Keanekaragaman hayati kebanggaan daerah." },
+    { icon: Footprints, label: "Fauna Khas", val: `${p.fauna} (${p.faunaLatin})`, tone: "bg-amber-700 text-white", story: p.faunaEnglish ? `Dikenal juga sebagai ${p.faunaEnglish}. Satwa istimewa kebanggaan daerah.` : "Satwa istimewa kebanggaan daerah." },
   ];
 
   return (
@@ -52,7 +54,7 @@ function ProvinsiPage() {
               <div className="size-9 rounded-xl bg-white/20 backdrop-blur grid place-items-center">
                 <Compass className="size-5" strokeWidth={2.5} />
               </div>
-              <span className="font-bold hidden sm:inline">Jelajah Budaya</span>
+              <span className="font-bold hidden sm:inline">Jelajah Nusantara</span>
             </Link>
           </div>
 
@@ -101,7 +103,7 @@ function ProvinsiPage() {
                 <Sparkles className="size-3.5" /> Tantangan
               </div>
               <h3 className="mt-2 text-2xl md:text-3xl font-bold">Uji pengetahuanmu tentang {p.name}!</h3>
-              <p className="text-white/90">Kumpulkan lencana dan jadilah Duta Budaya.</p>
+              <p className="text-white/90">Kumpulkan stempel dan jadilah Duta Budaya.</p>
             </div>
             <Link
               to="/kuis"

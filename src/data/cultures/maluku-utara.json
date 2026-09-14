@@ -1,0 +1,23 @@
+{
+    "id": "IN21",
+    "nama": "Maluku Utara",
+    "ibu_kota": "Sofifi",
+    "luas_km2": 32998.696,
+    "jumlah_penduduk": 1373820,
+    "budaya": {
+        "baju_adat": "Baju Menteren Lamo dan Kimun Gia",
+        "tarian": "Tari Cakalele, Tari Bambu Gila dan Tari Soya‑Soya",
+        "rumah_adat": "Rumah Sasadu dan Rumah Baileo",
+        "senjata_tradisional": "Sumpit, Badik dan Parang Salawaku",
+        "makanan_khas": "Papeda, Ikan Asar dan  Sambal Colo-Colo",
+        "warisan_budaya": "Hibua Lamo, Tide-tide dan Soya-soya",
+        "cagar_budaya": "Sigi Lamo, Makam Sultan Mahmud Badaruddin II dan Masjid Sultan Ternate",
+        "alat_musik": "Arababu, Marakas dan Ukulele",
+        "flora": "Cengkeh",
+        "flora_latin": "Syzygium Aromaticum",
+        "flora_english": "Clove",
+        "fauna": "Burung Bidadari Halmahera",
+        "fauna_latin": "Semioptera Wallacii",
+        "fauna_english": "Standardwing"
+    }
+}

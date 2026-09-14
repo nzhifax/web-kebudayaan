@@ -1,0 +1,23 @@
+{
+    "id": "IN19",
+    "nama": "Lampung",
+    "ibu_kota": "Bandar Lampung",
+    "luas_km2": 33570.264,
+    "jumlah_penduduk": 9522910,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Tulang Bawang, Pepadun dan Saibatin",
+        "tarian": "Tari Bedana, Tari Topeng dan Tari Melinting",
+        "rumah_adat": "Nuwo Sesat, Lamban Pesagi dan Mahanyuk'an",
+        "senjata_tradisional": "Terapang, Badik Lampung, dan Taji Ayam",
+        "makanan_khas": "Seruit, Gulai Taboh dan Tempoyak, Geguduh",
+        "warisan_budaya": "Gamolan, Gambus dan Kompang",
+        "cagar_budaya": "Prasasti Palas Pasema dan Prasasti Batu Bedil",
+        "alat_musik": "Gambus Lampung, Bende dan Kolintang",
+        "flora": "Bunga Ashar",
+        "flora_latin": "Mirabilis Jalapa L",
+        "flora_english": "Four O'clock Flower",
+        "fauna": "Gajah Sumatera",
+        "fauna_latin": "Elephas Maximus Sumatranus",
+        "fauna_english": "Sumatran Elephant"
+    }
+}

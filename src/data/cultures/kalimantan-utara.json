@@ -1,0 +1,23 @@
+{
+    "id": "IN16",
+    "nama": "Kalimantan Utara",
+    "ibu_kota": "Tanjung Selor",
+    "luas_km2": 70101,
+    "jumlah_penduduk": 749370,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Ta’a dan Sapei Sapaq",
+        "tarian": "Kancet Ledo dan Jepen",
+        "rumah_adat": "Rumah Baloy",
+        "senjata_tradisional": "Mandau",
+        "makanan_khas": "Lawa",
+        "warisan_budaya": "Jugit Demaring. Jatung Utang dan Lalatip",
+        "cagar_budaya": "Rumah Baloy Mayo",
+        "alat_musik": "Jatung Utang",
+        "flora": "Bakau",
+        "flora_latin": "Rhizophora Mangle",
+        "flora_english": "American Mangrove",
+        "fauna": "Gajah Borneo",
+        "fauna_latin": "Elephas Maximus Borneensis",
+        "fauna_english": "Borneo Pygmy Elephant"
+    }
+}

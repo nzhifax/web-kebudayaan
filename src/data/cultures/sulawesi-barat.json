@@ -1,0 +1,23 @@
+{
+    "id": "IN31",
+    "nama": "Sulawesi Barat",
+    "ibu_kota": "Mamuju",
+    "luas_km2": 16594.75,
+    "jumlah_penduduk": 1525335,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Pattuqduq Towaine",
+        "tarian": "Tari Patuddu, Tari Bulu Londong dan Tari Sayyang Pattuqduq",
+        "rumah_adat": "Rumah Boyang",
+        "senjata_tradisional": "Badik, Gayang dan Kandawulo",
+        "makanan_khas": "Jepa, Golla Kambu dan Ikan Terbang Asap",
+        "warisan_budaya": "Saiyyang Pattuqduq",
+        "cagar_budaya": "Rumah Boyang",
+        "alat_musik": "Kecapi Mandar, Pompang dan Gongga Lima",
+        "flora": "Cempaka Hutan Kasar",
+        "flora_latin": "Elmerrillia Ovalis",
+        "flora_english": "Magnolia Wood",
+        "fauna": "Burung Mandar Dengkur",
+        "fauna_latin": "Aramidopsis Plateni",
+        "fauna_english": "Snoring Rail, Celebes Rail, Platen's Rail"
+    }
+}

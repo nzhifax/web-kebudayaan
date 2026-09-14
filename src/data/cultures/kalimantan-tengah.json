@@ -1,0 +1,23 @@
+{
+    "id": "IN14",
+    "nama": "Kalimantan Tengah",
+    "ibu_kota": "Palangkaraya",
+    "luas_km2": 153443.9,
+    "jumlah_penduduk": 2844990,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Sangkarut",
+        "tarian": "Tari Tambun Bungai, Kinyah Mandau Hatue dan Babukung",
+        "rumah_adat": "Rumah Betang",
+        "senjata_tradisional": "Mandau dan Talawang",
+        "makanan_khas": "Kalumpe, Sulur Keladi Katuk Telur dan Wadi",
+        "warisan_budaya": "Patung Sapundu, Mandau dan Tiwaah",
+        "cagar_budaya": "Rumah Betang Sei Pasah",
+        "alat_musik": "Japeh, Garantung dan Gandang Manca",
+        "flora": "Pohon Tenggaring/Rambutan",
+        "flora_latin": "Nephelium Ramboutan-ake",
+        "flora_english": "Pulasan",
+        "fauna": "Burung Kuau Kerdil Kalimantan",
+        "fauna_latin": "Polyplectron Schleiermacheri",
+        "fauna_english": "Bornean Peacock Pheasant"
+    }
+}

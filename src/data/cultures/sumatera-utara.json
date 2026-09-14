@@ -1,0 +1,23 @@
+{
+    "id": "IN38",
+    "nama": "Sumatera Utara",
+    "ibu_kota": "Medan",
+    "luas_km2": 72460.744,
+    "jumlah_penduduk": 15785839,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Ulos",
+        "tarian": "Tortor",
+        "rumah_adat": "Rumah Bolon",
+        "senjata_tradisional": "Piso Tumbuk Lada, Piso Gaja Dompak dan Tongkat Tunggal Panaluan",
+        "makanan_khas": "Soto Batak, Arsik, dan Mie Gomak",
+        "warisan_budaya": "Ulos dan tarian Tortor",
+        "cagar_budaya": "Rumah Bolon",
+        "alat_musik": "Ole-ole, Balobat dan Odap",
+        "flora": "Bunga Kenanga, Sapalen (Baru), Kananga (Sunda), Wanggulita (Gorontalo), Sandat Wangsa (Madura), Inangai (Minangkabau)",
+        "flora_latin": "Cananga Odorata",
+        "flora_english": "Ylang-Ylang",
+        "fauna": "Beo Nias/Ciong, Tiong, Mamiang, Tiong Emas",
+        "fauna_latin": "Gracula Religiosa Robusta",
+        "fauna_english": "Common Hill Myna"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "IN20",
+    "nama": "Maluku",
+    "ibu_kota": "Ambon",
+    "luas_km2": 46158.26,
+    "jumlah_penduduk": 1970563,
+    "budaya": {
+        "baju_adat": "Baju Cele, Baniang Putih dan Baju Koja",
+        "tarian": "Tari Cakalele",
+        "rumah_adat": "Rumah Baileo, Rumah Sasadu",
+        "senjata_tradisional": "Salawaku",
+        "makanan_khas": "Papeda, Gohu Ikan dan Woku Komo-komo",
+        "warisan_budaya": "Tifa, Rumah Baileo",
+        "cagar_budaya": "Rumah Baileo",
+        "alat_musik": "Tifa dan Totobuang",
+        "flora": "Anggrek Larat",
+        "flora_latin": "Dendrobium Phalaenopsis",
+        "flora_english": "Cooktown Orchid",
+        "fauna": "Burung Nuri Raja Ambon",
+        "fauna_latin": "Alisterus Amboinensis",
+        "fauna_english": "Moluccan King-parrot, Ambon King Parrot"
+    }
+}

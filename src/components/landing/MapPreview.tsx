@@ -1,128 +1,136 @@
 import { useState } from "react";
-import { MapPin, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { MapPin, ArrowRight, Sparkles, Compass } from "lucide-react";
 
-type Province = {
+type ProvincePreview = {
   id: string;
   name: string;
   x: number; // %
   y: number; // %
   color: string;
   emoji: string;
-  items: string[];
+  items: { label: string; icon: string }[];
 };
 
-const provinces: Province[] = [
-  { id: "aceh", name: "Aceh", x: 8, y: 30, color: "bg-forest", emoji: "🕌", items: ["Rumah Krong Bade", "Tari Saman", "Rencong", "Mie Aceh"] },
-  { id: "sumbar", name: "Sumatera Barat", x: 18, y: 46, color: "bg-terracotta", emoji: "🏠", items: ["Rumah Gadang", "Tari Piring", "Rendang", "Talempong"] },
-  { id: "jabar", name: "Jawa Barat", x: 38, y: 66, color: "bg-ocean", emoji: "🎋", items: ["Rumah Kasepuhan", "Tari Jaipong", "Angklung", "Batagor"] },
-  { id: "jateng", name: "Jawa Tengah", x: 48, y: 70, color: "bg-gold", emoji: "🏯", items: ["Rumah Joglo", "Tari Gambyong", "Gamelan", "Lumpia"] },
-  { id: "bali", name: "Bali", x: 60, y: 76, color: "bg-terracotta", emoji: "🔥", items: ["Rumah Gapura Candi Bentar", "Tari Kecak", "Gamelan Bali", "Ayam Betutu"] },
-  { id: "sulsel", name: "Sulawesi Selatan", x: 66, y: 56, color: "bg-forest", emoji: "⛵", items: ["Tongkonan", "Tari Pakarena", "Kapal Pinisi", "Coto Makassar"] },
-  { id: "papua", name: "Papua", x: 88, y: 60, color: "bg-ocean", emoji: "🪶", items: ["Rumah Honai", "Tari Yospan", "Noken", "Papeda"] },
+const provinces: ProvincePreview[] = [
+  { id: "aceh", name: "Aceh", x: 8, y: 30, color: "bg-emerald-500", emoji: "🗡️", items: [{ label: "Rumah Krong Bade", icon: "🏠" }, { label: "Tari Saman", icon: "🎭" }, { label: "Rencong Aceh", icon: "🗡️" }, { label: "Mie Aceh", icon: "🍜" }] },
+  { id: "sumbar", name: "Sumatera Barat", x: 18, y: 46, color: "bg-amber-500", emoji: "🏠", items: [{ label: "Rumah Gadang", icon: "🏠" }, { label: "Tari Piring", icon: "🎭" }, { label: "Karih", icon: "🗡️" }, { label: "Rendang Padang", icon: "🍲" }] },
+  { id: "jabar", name: "Jawa Barat", x: 38, y: 66, color: "bg-blue-500", emoji: "🎋", items: [{ label: "Rumah Kasepuhan", icon: "🏠" }, { label: "Tari Jaipong", icon: "🎭" }, { label: "Angklung", icon: "🎵" }, { label: "Batagor & Siomay", icon: "🍲" }] },
+  { id: "jateng", name: "Jawa Tengah", x: 48, y: 70, color: "bg-purple-500", emoji: "🏯", items: [{ label: "Rumah Joglo", icon: "🏠" }, { label: "Tari Gambyong", icon: "🎭" }, { label: "Gamelan Jawa", icon: "🎵" }, { label: "Lumpia Semarang", icon: "🍲" }] },
+  { id: "bali", name: "Bali", x: 60, y: 76, color: "bg-rose-500", emoji: "🔥", items: [{ label: "Candi Bentar", icon: "🏠" }, { label: "Tari Kecak", icon: "🎭" }, { label: "Gamelan Bali", icon: "🎵" }, { label: "Ayam Betutu", icon: "🍲" }] },
+  { id: "sulsel", name: "Sulawesi Selatan", x: 66, y: 56, color: "bg-teal-500", emoji: "⛵", items: [{ label: "Tongkonan", icon: "🏠" }, { label: "Tari Pakarena", icon: "🎭" }, { label: "Kapal Pinisi", icon: "⛵" }, { label: "Coto Makassar", icon: "🍲" }] },
+  { id: "papua", name: "Papua", x: 88, y: 60, color: "bg-indigo-500", emoji: "🪶", items: [{ label: "Rumah Honai", icon: "🏠" }, { label: "Tari Yospan", icon: "🎭" }, { label: "Noken Papua", icon: "🎒" }, { label: "Papeda & Ikan", icon: "🍲" }] },
 ];
 
 export function MapPreview() {
-  const [active, setActive] = useState<Province>(provinces[4]);
+  const [active, setActive] = useState<ProvincePreview>(provinces[4]);
 
   return (
-    <section id="peta" className="relative py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block bg-ocean text-ocean-foreground rounded-full px-4 py-1.5 text-sm font-bold mb-4">
-            Peta Interaktif
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-3">
-            Klik pulau. Temukan kejutan.
+    <section id="peta-preview" className="relative py-24 md:py-32 bg-sky-50/60 font-[family-name:var(--font-body)] overflow-hidden select-none">
+      <div className="mx-auto max-w-7xl px-6 relative z-10">
+        {/* Section Header */}
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-100 text-sky-900 border border-sky-300 text-xs font-black mb-3">
+            <Compass className="size-4 text-sky-600 animate-spin-slow" />
+            <span>Peta Interaktif Petualangan</span>
+          </div>
+          <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+            Klik Pulau. Temukan Kejutan!
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Setiap provinsi menyimpan cerita, tarian, rumah adat, dan makanan yang siap kamu jelajahi.
+          <p className="mt-3 text-base text-slate-600 font-bold">
+            Setiap provinsi menyimpan tarian, rumah adat, musik, dan kuliner unik yang siap kamu buka di peta.
           </p>
         </div>
 
-        <div className="card-soft rounded-[2.5rem] p-4 md:p-8 bg-gradient-to-br from-sky/60 via-white to-cream relative overflow-hidden">
-          <div className="absolute -top-16 -right-16 size-64 rounded-full bg-gold/30 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 size-72 rounded-full bg-ocean/20 blur-3xl" />
-
-          <div className="grid lg:grid-cols-12 gap-6 relative">
-            {/* Map */}
-            <div className="lg:col-span-8 relative aspect-[16/9] rounded-3xl bg-sky/40 border-2 border-dashed border-ocean/30 overflow-hidden">
-              {/* stylized ocean */}
+        {/* Map Preview Card Container */}
+        <div className="rounded-[2.5rem] bg-white p-6 md:p-8 shadow-2xl border-3 border-white/90 relative overflow-hidden">
+          <div className="grid lg:grid-cols-12 gap-8 relative z-10 items-center">
+            {/* Interactive Map Visual */}
+            <div className="lg:col-span-8 relative aspect-[16/9] rounded-3xl bg-sky-200/60 border-2 border-sky-300 overflow-hidden shadow-inner">
+              {/* Ocean & Archipelago SVG Graphic */}
               <svg viewBox="0 0 800 450" className="absolute inset-0 size-full">
                 <defs>
                   <linearGradient id="oceanG" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0" stopColor="#bfe0ff" />
-                    <stop offset="1" stopColor="#7fc2ff" />
+                    <stop offset="0" stopColor="#bae6fd" />
+                    <stop offset="1" stopColor="#38bdf8" />
                   </linearGradient>
                 </defs>
                 <rect width="800" height="450" fill="url(#oceanG)" />
-                {/* Rough archipelago silhouettes */}
-                <g fill="#7ec97a" opacity="0.9">
-                  <ellipse cx="90" cy="150" rx="70" ry="22" />
-                  <ellipse cx="200" cy="220" rx="90" ry="26" />
-                  <ellipse cx="360" cy="290" rx="130" ry="28" />
-                  <ellipse cx="530" cy="270" rx="70" ry="24" />
-                  <ellipse cx="600" cy="330" rx="40" ry="16" />
-                  <path d="M580,220 q40,-40 110,-20 q60,20 40,60 q-20,40 -90,30 q-70,-10 -60,-70z" />
-                  <ellipse cx="720" cy="280" rx="60" ry="30" />
+
+                {/* Cartoon Island Shapes */}
+                <g fill="#86efac" stroke="#16a34a" strokeWidth="3" opacity="0.95">
+                  <ellipse cx="100" cy="150" rx="75" ry="24" />
+                  <ellipse cx="210" cy="220" rx="95" ry="28" />
+                  <ellipse cx="370" cy="295" rx="135" ry="30" />
+                  <ellipse cx="540" cy="275" rx="75" ry="26" />
+                  <ellipse cx="610" cy="335" rx="45" ry="18" />
+                  <path d="M590,220 q40,-40 110,-20 q60,20 40,60 q-20,40 -90,30 q-70,-10 -60,-70z" />
+                  <ellipse cx="730" cy="285" rx="65" ry="32" />
                 </g>
               </svg>
 
-              {/* Province pins */}
+              {/* Province Pins */}
               {provinces.map((p) => (
                 <button
                   key={p.id}
                   onMouseEnter={() => setActive(p)}
-                  onFocus={() => setActive(p)}
                   onClick={() => setActive(p)}
-                  className="absolute -translate-x-1/2 -translate-y-1/2 group"
+                  className="absolute -translate-x-1/2 -translate-y-1/2 transition-transform duration-300"
                   style={{ left: `${p.x}%`, top: `${p.y}%` }}
-                  aria-label={p.name}
                 >
-                  <span className={`relative flex size-11 items-center justify-center rounded-2xl ${p.color} text-white text-xl shadow-[0_6px_0_rgba(0,0,0,0.15)] transition-transform ${active.id === p.id ? "scale-125" : "group-hover:scale-110"}`}>
+                  <span
+                    className={`relative flex size-12 items-center justify-center rounded-2xl ${p.color} text-white text-2xl shadow-lg border-2 border-white transition-all ${
+                      active.id === p.id ? "scale-125 ring-4 ring-amber-300 z-20" : "hover:scale-110"
+                    }`}
+                  >
                     {p.emoji}
-                    <span className={`absolute inset-0 rounded-2xl ${p.color} opacity-40 animate-ping`} style={{ animationDuration: "2.5s" }} />
                   </span>
-                  <span className="absolute left-1/2 -translate-x-1/2 top-full mt-1 whitespace-nowrap rounded-full bg-white/95 px-2.5 py-0.5 text-xs font-bold text-foreground shadow-[var(--shadow-soft)]">
+                  <span className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 whitespace-nowrap rounded-full bg-slate-900/90 text-white px-3 py-0.5 text-[11px] font-black shadow-md border border-white/20">
                     {p.name}
                   </span>
                 </button>
               ))}
 
-              {/* Legend */}
-              <div className="absolute bottom-3 right-3 bg-white/90 rounded-2xl px-3 py-2 text-xs font-semibold text-foreground shadow-[var(--shadow-soft)] flex items-center gap-2">
+              {/* Legend Tag */}
+              <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-2 text-xs font-black text-slate-800 shadow-lg border border-white flex items-center gap-2">
                 <MapPin className="size-4 text-terracotta" />
-                Klik ikon untuk melihat budaya
+                <span>Arahkan kursor / Tap pada ikon provinsi!</span>
               </div>
             </div>
 
-            {/* Detail panel */}
+            {/* Active Province Detail Card */}
             <div className="lg:col-span-4">
-              <div className="rounded-3xl bg-white p-6 shadow-[var(--shadow-card)] border border-white h-full flex flex-col">
-                <div className="flex items-center gap-3">
-                  <div className={`size-14 rounded-2xl ${active.color} grid place-items-center text-2xl text-white shadow-[var(--shadow-soft)]`}>
-                    {active.emoji}
+              <div className="rounded-3xl bg-slate-900 p-6 text-white shadow-xl border border-slate-800 h-full flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-3 pb-4 border-b border-slate-800">
+                    <div className={`size-14 rounded-2xl ${active.color} grid place-items-center text-3xl shadow-md border border-white/20`}>
+                      {active.emoji}
+                    </div>
+                    <div>
+                      <div className="text-[10px] uppercase font-black tracking-widest text-amber-400">Provinsi Selected</div>
+                      <h3 className="text-2xl font-black text-white leading-tight">{active.name}</h3>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-xs uppercase tracking-wider text-muted-foreground font-bold">Provinsi</div>
-                    <div className="text-2xl font-bold text-foreground leading-tight">{active.name}</div>
+
+                  <div className="mt-5 space-y-2.5">
+                    {active.items.map((it) => (
+                      <div key={it.label} className="flex items-center gap-3 rounded-2xl bg-slate-800/80 p-3 border border-slate-700/60">
+                        <span className="size-9 rounded-xl bg-slate-700 grid place-items-center text-base shrink-0">
+                          {it.icon}
+                        </span>
+                        <span className="text-xs font-black text-slate-200">{it.label}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
-                <ul className="mt-5 space-y-2 flex-1">
-                  {active.items.map((it, i) => (
-                    <li key={it} className="flex items-center gap-3 rounded-2xl bg-cream px-3 py-2.5 border border-border/60">
-                      <span className={`size-8 rounded-xl grid place-items-center text-sm font-bold ${["bg-terracotta text-terracotta-foreground","bg-ocean text-ocean-foreground","bg-forest text-forest-foreground","bg-gold text-gold-foreground"][i % 4]}`}>
-                        {["🏠","🎭","🎵","🍲"][i]}
-                      </span>
-                      <span className="font-semibold text-foreground">{it}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <button className="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-terracotta text-terracotta-foreground py-3.5 font-bold shadow-[0_6px_0_oklch(0.45_0.16_35)] hover:-translate-y-0.5 transition">
-                  Klik untuk menjelajah
-                  <ArrowRight className="size-5" />
-                </button>
+                <Link
+                  to="/peta"
+                  className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-amber-950 py-4 text-xs font-black shadow-lg transition-all"
+                >
+                  <span>Eksplor Peta Penuh</span>
+                  <ArrowRight className="size-4 stroke-[3]" />
+                </Link>
               </div>
             </div>
           </div>

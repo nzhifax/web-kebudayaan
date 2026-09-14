@@ -1,0 +1,23 @@
+{
+    "id": "IN28",
+    "nama": "Papua Selatan",
+    "ibu_kota": "Merauke",
+    "luas_km2": 117849.16,
+    "jumlah_penduduk": 549650,
+    "budaya": {
+        "baju_adat": "Koteka/Holim, Rok Rumbai/Rumbia dan Baju Kain Rumput",
+        "tarian": "Tari Perang, Tarian Bakar Batu dan Tari Suling Tambur",
+        "rumah_adat": "Rumah Honai, Rumah Ebe'ai dan Rumah Suku Korowai",
+        "senjata_tradisional": "Tombak (Tul/Mensa), Busur&Panah (Fela) dan Parang Jalowy",
+        "makanan_khas": "Papeda, Sagu Bakar dan Lempeng Sagu",
+        "warisan_budaya": "Koteka, Noken dan ukiran Asmat (Bisj Pole)",
+        "cagar_budaya": "Ukiran Bisj Pole Asmat",
+        "alat_musik": "Tifa dan Suling Tambur",
+        "flora": "Matoa",
+        "flora_latin": "Pometia Pinnata",
+        "flora_english": "Fijian Longan",
+        "fauna": "Kanguru Kecil Wallaby",
+        "fauna_latin": "Dorcopsulus Macleayi",
+        "fauna_english": "Macleay's Dorcopsis"
+    }
+}

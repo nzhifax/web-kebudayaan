@@ -1,0 +1,23 @@
+{
+    "id": "IN17",
+    "nama": "Kepulauan Bangka Belitung",
+    "ibu_kota": "Pangkal Pinang",
+    "luas_km2": 16690.13,
+    "jumlah_penduduk": 1531500,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Paksian",
+        "tarian": "Tari Campak dan Tari Zapin",
+        "rumah_adat": "Rumah Panggung, Rumah Limas dan Rumah Rakit",
+        "senjata_tradisional": "Parang Badau, Kedik dan Siwar Panjang",
+        "makanan_khas": "Lempah Kuning, Kemplang Belacan dan Mie Bangka",
+        "warisan_budaya": "Dambus, Campak Dalung dan Adat Maras Taun",
+        "cagar_budaya": "Rumah Limas dan Ritual Maras Taun",
+        "alat_musik": "Gendang Melayu, Rebana dan Suling",
+        "flora": "Pohon Nagasari/ Nyatoh",
+        "flora_latin": "Palaquium Rostratum",
+        "flora_english": "Nyatoh",
+        "fauna": "Mentilin",
+        "fauna_latin": "Tarsius bancanus",
+        "fauna_english": "Horsfield's Tarsier"
+    }
+}

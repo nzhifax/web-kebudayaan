@@ -1,0 +1,23 @@
+{
+    "id": "IN10",
+    "nama": "Jawa Tengah",
+    "ibu_kota": "Semarang",
+    "luas_km2": 34337.49,
+    "jumlah_penduduk": 3823930,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Kebaya Jawa",
+        "tarian": "Tari Gambyong, Tari Bedhaya dan Tari Tayub",
+        "rumah_adat": "Rumah Adat Limasan, Rumah Joglo Pangrawit dan Rumah Joglo Mangkurat",
+        "senjata_tradisional": "Keris, Tombak dan Wedhung",
+        "makanan_khas": "Lumpia Semarang, Bandeng Presto dan Soto Kudus",
+        "warisan_budaya": "Wayang Kulit, Batik Solo/Pekalongan dan Seni ukir",
+        "cagar_budaya": "Candi Borobudur, Lawang Sewu dan Keraton Surakarta",
+        "alat_musik": "Gamelan Jawa, Angklung Banyumasan dan Slenthem",
+        "flora": "Bunga Kantil",
+        "flora_latin": "Michelia Alba",
+        "flora_english": "White Champaca",
+        "fauna": "Burung Kepondang Emas",
+        "fauna_latin": "Oriolus Chinensis",
+        "fauna_english": "Black-Naped Oriole"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "IN30",
+    "nama": "Riau",
+    "ibu_kota": "Pekanbaru",
+    "luas_km2": 89935.9,
+    "jumlah_penduduk": 6811160,
+    "budaya": {
+        "baju_adat": "Baju Teluk Belanga, Baju Cekak Musang dan Tenun Songket Riau",
+        "tarian": "Tari Mak Yong, Tari Zapin Api dan Tarian Makan Sirih",
+        "rumah_adat": "Rumah Melayu Riau",
+        "senjata_tradisional": "Klewang, Pedang Jenawi dan Keris Riau",
+        "makanan_khas": "Sup Tunjang, Gulai Ikan Patin dan Lakse Kuah",
+        "warisan_budaya": "Pacu Jalur, Randai Kuantan dan Silat Perisai",
+        "cagar_budaya": "Rumah Lontiok dan Museum Sang Nila Utama",
+        "alat_musik": "Rebab, Gendang dan Tetawak",
+        "flora": "Pohon Palem Nibung",
+        "flora_latin": "Oncosperma Tigillarium",
+        "flora_english": "Nibong Palm",
+        "fauna": "Serindit Melayu/ Sindit, Seindit",
+        "fauna_latin": "Loriculus Galgulus",
+        "fauna_english": "Blue-Crowned Hanging Parrot"
+    }
+}

@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 const items = [
   { value: 38, suffix: "", label: "Provinsi", icon: "🗺️", color: "bg-ocean text-ocean-foreground" },
-  { value: 850, suffix: "+", label: "Warisan Budaya", icon: "🏛️", color: "bg-terracotta text-terracotta-foreground" },
-  { value: 400, suffix: "+", label: "Foto Budaya", icon: "📸", color: "bg-forest text-forest-foreground" },
-  { value: 8, suffix: "", label: "Kategori", icon: "🎭", color: "bg-gold text-gold-foreground" },
+  { value: 500, suffix: "+", label: "Warisan Budaya", icon: "🏛️", color: "bg-terracotta text-terracotta-foreground" },
+  { value: 180, suffix: "+", label: "Kuis & Misi", icon: "📸", color: "bg-forest text-forest-foreground" },
+  { value: 6, suffix: "", label: "Kategori Kuis", icon: "🎭", color: "bg-gold text-gold-foreground" },
 ];
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {

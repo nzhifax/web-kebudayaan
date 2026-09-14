@@ -1,0 +1,23 @@
+{
+    "id": "IN05",
+    "nama": "Daerah Istimewa Yogyakarta",
+    "ibu_kota": "Yogyakarta",
+    "luas_km2": 3133.15,
+    "jumlah_penduduk": 3759500,
+    "budaya": {
+        "baju_adat": "Kebaya, Beskap dan Blangkon",
+        "tarian": "Tari Serimpi, Tari Beksan Lawung Ageng dan Tari Golek Ayun-ayun",
+        "rumah_adat": "Rumah Adat Joglo",
+        "senjata_tradisional": "Keris",
+        "makanan_khas": "Gudeg, Soto Daging Khas Yogyakarta dan Jadah Manten",
+        "warisan_budaya": "Sumbu FIlosofi Yogyakarta, Tradisi Grebeg dan Tradisi Labuhan",
+        "cagar_budaya": "Kotagede, Keraton dan Candi Prambanan",
+        "alat_musik": "Gamelan, Dhodhog, dan Thunthung,",
+        "flora": "Pohon Burahol/Kepel",
+        "flora_latin": "Stelechocarpus Burahol",
+        "flora_english": "Kepel Apple",
+        "fauna": "Burung Perkutut",
+        "fauna_latin": "Geopelia Striata",
+        "fauna_english": "Barred Ground Dove"
+    }
+}

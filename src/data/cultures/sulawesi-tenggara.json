@@ -1,0 +1,23 @@
+{
+    "id": "IN34",
+    "nama": "Sulawesi Tenggara",
+    "ibu_kota": "Kendari",
+    "luas_km2": 36159.71,
+    "jumlah_penduduk": 2836740,
+    "budaya": {
+        "baju_adat": "Babu Nggawi, Pakaian Muna dan Pakaian Buton",
+        "tarian": "Tarian Balumpa, Tari Dinggu dan Tari Lumense",
+        "rumah_adat": "Rumah Malige, Rumah Mekongga dan Rumah Banua Tada",
+        "senjata_tradisional": "Keris dan Badik",
+        "makanan_khas": "Lapa-lapa",
+        "warisan_budaya": "Pakaian adat Tolaki, rumah adat Malige/Mekongga dan Tari Balumpa",
+        "cagar_budaya": "Rumah Adat Malige, Mekongga, dan Banua Tada",
+        "alat_musik": "Ladolado",
+        "flora": "Anggrek Serat",
+        "flora_latin": "Dendrobium Utile",
+        "flora_english": "Fibre Orchid",
+        "fauna": "Anoa Pegunungan",
+        "fauna_latin": "Bubalus Quarlesi",
+        "fauna_english": "Mountain Anoa"
+    }
+}

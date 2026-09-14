@@ -1,0 +1,23 @@
+{
+    "id": "IN22",
+    "nama": "Nusa Tenggara Barat",
+    "ibu_kota": "Mataram",
+    "luas_km2": 19675.89,
+    "jumlah_penduduk": 5731100,
+    "budaya": {
+        "baju_adat": "Baju Pegon, Lambung dan Rimpu",
+        "tarian": "Tari Oncer, Tari Mpaa Lenggogo dan Tari Sanggulu",
+        "rumah_adat": "Bale Lumbung dan Berugaq Sekenam",
+        "senjata_tradisional": "Keris, Klewang dan Tulup",
+        "makanan_khas": "Ayam Taliwang, Sate Bulayak dan Uta Palumara",
+        "warisan_budaya": "Tarian adat Mpaa Lenggogo, Tradisi Peresean dan Perang Topat",
+        "cagar_budaya": "Bale Lumbung dan Istana Dalam Loka",
+        "alat_musik": "Gendang Beleq, Palompong dan Pereret",
+        "flora": "Pohon Ajan Kelicung",
+        "flora_latin": "Diospyros Macrophylla",
+        "flora_english": "Ajan Kelicung",
+        "fauna": "Rusa Timor",
+        "fauna_latin": "Cervus Timorensis",
+        "fauna_english": "Timor Deer"
+    }
+}

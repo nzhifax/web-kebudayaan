@@ -1,0 +1,23 @@
+{
+    "id": "IN03",
+    "nama": "Banten",
+    "ibu_kota": "Serang",
+    "luas_km2": 9325.77,
+    "jumlah_penduduk": 12540000,
+    "budaya": {
+        "baju_adat": "Baju Pangsi Banten, Pakaian Suku Baduy Dalam dan Pakaian Suku Baduy Luar",
+        "tarian": "Tari Cokek, Tari Jaipong dan Tari Debus",
+        "rumah_adat": "Rumah Adat Banten Sulah Nyanda",
+        "senjata_tradisional": "Bedog, Golok Ciomas dan Golok Sulangkar",
+        "makanan_khas": "Sate Bandeng, Rabeg dan Gerem Asem",
+        "warisan_budaya": "Seren Taun",
+        "cagar_budaya": "Masjid Agung Banten, Prasasti Purnawarman di Munjul dan Situs Patapan",
+        "alat_musik": "Angklung Gubrag, Bambu Jitak dan Kacapi",
+        "flora": "Kokoleceran",
+        "flora_latin": "Vatica Bantamensis",
+        "flora_english": "Banten Vatica",
+        "fauna": "Badak Jawa/ Badak Bercula Satu",
+        "fauna_latin": "Rhinoceros sondaicus",
+        "fauna_english": "Javan Rhino"
+    }
+}

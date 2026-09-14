@@ -1,29 +1,30 @@
-# Welcome to your Lovable project
+# Jelajah Nusantara (Peta Petualang Indonesia)
 
-This project was built with [Lovable](https://lovable.dev).
+Aplikasi WebGIS interaktif edukasi budaya Indonesia dari 38 provinsi.
 
-## Build with Lovable
+## Fitur Utama
+- **Peta Interaktif**: Jelajahi pulau dan provinsi di Indonesia dengan Leaflet.
+- **Kuis Budaya**: Uji pengetahuan mengenai tarian, makanan, rumah adat, dan alat musik.
+- **Kartu Provinsi**: Informasi detail tiap daerah di Indonesia.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+## Jalankan Secara Lokal (Development)
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+Prasyarat: Node.js (v18+)
 
-## Development
+```bash
+# 1. Install dependensi
+npm install
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+# 2. Jalankan server dev Vite
 npm run dev
 ```
 
-## Built with
+Buka browser di `http://localhost:5173`.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Build untuk Produksi
+
+```bash
+npm run build
+```
+
+Hasil build akan berada di folder `dist/` dan siap dipublish di Vercel, Netlify, Cloudflare Pages, atau server VPS Nginx.

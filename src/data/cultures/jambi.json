@@ -1,0 +1,23 @@
+{
+    "id": "IN08",
+    "nama": "Jambi",
+    "ibu_kota": "Jambi",
+    "luas_km2": 49026.58,
+    "jumlah_penduduk": 3768500,
+    "budaya": {
+        "baju_adat": "Baju Kurung Tanggung",
+        "tarian": "Tari Sekapur Sirih, Tari Rentak Besapih dan Tari Tauh",
+        "rumah_adat": "Rumah Panggung Kajang Lako",
+        "senjata_tradisional": "Badik Tumbuk Lada, Keris Siginjai dan Tombak Jambi Perdang bermata dobel",
+        "makanan_khas": "Gulai Ikan Patin dan Nasi Gemuk",
+        "warisan_budaya": "Nasi Gemuk",
+        "cagar_budaya": "Candi Muaro Jambi",
+        "alat_musik": "Cangor, Serangko, dan Gendang Melayu",
+        "flora": "Pohon Pinang Merah",
+        "flora_latin": "Cyrtostachys Renda",
+        "flora_english": "Lipstick Palm (Malaya Sealing Wax Palm)",
+        "fauna": "Harimau Sumatera",
+        "fauna_latin": "Panthera Tigris Sumatrae",
+        "fauna_english": "Sumatran Tiger"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "IN06",
+    "nama": "DKI Jakarta",
+    "ibu_kota": "Jakarta",
+    "luas_km2": 660.982,
+    "jumlah_penduduk": 10677975,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Kebaya Encim dan Sadariah",
+        "tarian": "Tari Belenggo dan Tari Lenggong Nyai",
+        "rumah_adat": "Rumah Adat Betawi",
+        "senjata_tradisional": "Golok Betawi, Badik Cangkingan dan Senjata Tradisional Cunrik",
+        "makanan_khas": "Kerak Telor, Roti Buaya dan Soto Betawi",
+        "warisan_budaya": "Ondel-ondel, Tanjidor dan Lenong",
+        "cagar_budaya": "Gereja Sion (GPIB Jemaat Sion), Museum Bank Indonesia dan Kota Tua",
+        "alat_musik": "Gambang Kromong, Keroncong Tugu dan Tanjidor",
+        "flora": "Salak Condet",
+        "flora_latin": "Salacca Edulis",
+        "flora_english": "Snake Fruit",
+        "fauna": "Elang Bondol",
+        "fauna_latin": "Haliastur Indus",
+        "fauna_english": "Brahminy Kite"
+    }
+}

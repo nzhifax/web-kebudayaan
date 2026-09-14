@@ -1,0 +1,23 @@
+{
+    "id": "IN12",
+    "nama": "Kalimantan Barat",
+    "ibu_kota": "Pontianak",
+    "luas_km2": 147037.037,
+    "jumlah_penduduk": 5766030,
+    "budaya": {
+        "baju_adat": "Pakaian Adat King Baba dan King Bibinge",
+        "tarian": "Tari Monong, Tari Kondan dan Tari Kinyah Uut Danum",
+        "rumah_adat": "Rumah Panjang Radakng",
+        "senjata_tradisional": "Mandau, Pandat dan Tombak",
+        "makanan_khas": "Bubur Pedas Sambas",
+        "warisan_budaya": "Raja busana Dayak (King Baba, King Bibinge)",
+        "cagar_budaya": "Rumah Radakng",
+        "alat_musik": "Silotong, Entebong, dan Keledik",
+        "flora": "Pohon Tengkawang Tungkul/ Meranti merah",
+        "flora_latin": "Shorea Spp",
+        "flora_english": "Illipe Nut / Red Meranti",
+        "fauna": "Burung Enggang Gading/Rangkong Gading",
+        "fauna_latin": "Rhinoplax Vigil",
+        "fauna_english": "Helmeted Hornbill"
+    }
+}

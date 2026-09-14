@@ -1,0 +1,23 @@
+{
+    "id": "IN02",
+    "nama": "Bali",
+    "ibu_kota": "Denpasar",
+    "luas_km2": 5590.15,
+    "jumlah_penduduk": 4461300,
+    "budaya": {
+        "baju_adat": "Payas Agung, Payas Madya dan Payas Alit",
+        "tarian": "Tari Pendet, Tari Topeng dan Tari Kecak",
+        "rumah_adat": "Rumah Bali",
+        "senjata_tradisional": "Blakas",
+        "makanan_khas": "Sate Lilit, Babi Guling dan Ayam Betutu",
+        "warisan_budaya": "Ngaben, Melasti, Galungan",
+        "cagar_budaya": "Pura Ulun Danu Batur, Sistem Irigasi Subak dan Pura Agung Besakih",
+        "alat_musik": "Gamelan, Jegog dan Genggong",
+        "flora": "Pohon Majegau",
+        "flora_latin": "Dysoxylum Densiflorum",
+        "flora_english": "Jasmine Wood",
+        "fauna": "Burung Jalak Bali",
+        "fauna_latin": "Leucopsar Rothschildi",
+        "fauna_english": "Bali Myna"
+    }
+}

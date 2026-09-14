@@ -1,0 +1,23 @@
+{
+    "id": "IN33",
+    "nama": "Sulawesi Tengah",
+    "ibu_kota": "Palu",
+    "luas_km2": 61605.718,
+    "jumlah_penduduk": 3156100,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Nggembe",
+        "tarian": "Tari Dopalak, Tari Raigo dan Tari Pamote",
+        "rumah_adat": "Rumah Tambi dan Rumah Souraja",
+        "senjata_tradisional": "Guma, Pasatimpo dan Cakalele",
+        "makanan_khas": "Milu Siram, Palumara dan Kapurung",
+        "warisan_budaya": "Kakula Nuada, Tarian Dero dan tradisi Nggembe",
+        "cagar_budaya": "Rumah Tambi, Senjata Guma dan Pasatimpo",
+        "alat_musik": "Geso-Geso, Lalove dan Kakula Nuada",
+        "flora": "Kayu Eboni",
+        "flora_latin": "Diospyros Celebica",
+        "flora_english": "Macassar Ebony",
+        "fauna": "Burung Maleo Senkawor/Panua",
+        "fauna_latin": "Macrocephalon Maleo",
+        "fauna_english": "Maleo Senkawor"
+    }
+}

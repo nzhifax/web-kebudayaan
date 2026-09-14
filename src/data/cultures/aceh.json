@@ -1,0 +1,23 @@
+{
+    "id": "IN01",
+    "nama": "Aceh",
+    "ibu_kota": "Banda Aceh",
+    "luas_km2": 56839.09,
+    "jumlah_penduduk": 5554815,
+    "budaya": {
+        "baju_adat": "Ulee Balang",
+        "tarian": "Tari Saman",
+        "rumah_adat": "Rumoh Aceh",
+        "senjata_tradisional": "Rintjong Aceh",
+        "makanan_khas": "Mi Aceh, Gulai Bebek dan Meuseukat",
+        "warisan_budaya": "Seumeuleung Raja, Gegedem dan Geudeu-Geudeu",
+        "cagar_budaya": "Benteng dan Masjid Indrapuri",
+        "alat_musik": "Arbab, Bereguh dan Calempong",
+        "flora": "Bungong Jeumpa, Cempaka Wangi, Cempaka Kuning, Cepaga (Bugis), Campaka Mariri (Sulawesi Utara), Campaga (Minangkabau)",
+        "flora_latin": "Magnolia Champaca",
+        "flora_english": "Yellow Champaca",
+        "fauna": "Cempala Kuning/ Kucica Ekor Kuning, Cicem Pala Kuneng",
+        "fauna_latin": "Trichixos Pyrropygus",
+        "fauna_english": "Rufous-Tailed Shama"
+    }
+}

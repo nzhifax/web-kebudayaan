@@ -1,0 +1,23 @@
+{
+    "id": "IN13",
+    "nama": "Kalimantan Selatan",
+    "ibu_kota": "Banjarbaru",
+    "luas_km2": 37135.054,
+    "jumlah_penduduk": 4323330,
+    "budaya": {
+        "baju_adat": "Pakaian Adat Babaju Kun Galung Pacinan",
+        "tarian": "Tari Baksa Kembang, Tari Radap Rahayu dan Tari Mantang Gandut",
+        "rumah_adat": "Rumah Bubungan Tinggi",
+        "senjata_tradisional": "Keris Bujak Beliung dan Mandau",
+        "makanan_khas": "Soto Banjar, Ketupat Kandangan dan Dodol Kandangan",
+        "warisan_budaya": "Tari Baksa Kembang, Radap Rahayu, dan Mantang Gandut",
+        "cagar_budaya": "Rumah Bubungan Tinggi",
+        "alat_musik": "Panting, Kalampat, dan Sarunai",
+        "flora": "Kasturi",
+        "flora_latin": "Mangifera Casturi",
+        "flora_english": "Kalimantan Mango",
+        "fauna": "Kera Bekantan",
+        "fauna_latin": "Nasalis Larvatus",
+        "fauna_english": "Long-Nosed Monkey"
+    }
+}
